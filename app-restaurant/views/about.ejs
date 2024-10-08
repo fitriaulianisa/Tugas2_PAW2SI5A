@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Restoran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tentang Restoran Kami</h1>
+    <p>Selamat datang di Restoran Kami, tempat terbaik untuk menikmati hidangan lezat yang disiapkan dengan cinta.</p>
+
+    <h2>Visi Kami</h2>
+    <p>Kami bertujuan untuk menyediakan pengalaman kuliner yang tak terlupakan bagi setiap pengunjung.</p>
+
+    <h2>Misi Kami</h2>
+    <p>Menyajikan makanan berkualitas tinggi dengan layanan yang ramah dan cepat.</p>
+
+    <h2>Alamat</h2>
+    <p>Jl. Contoh Alamat No. 123, Kota Anda, Indonesia</p>
+
+    <h2>Kontak</h2>
+    <p>Email: info@restoran.com</p>
+    <p>Telepon: (021) 123-4567</p>
+
+    <h2>Data Restoran dalam JSON</h2>
+    <pre id="json-data"></pre>
+
+    <script>
+        const restaurantInfo = {
+            name: "Restoran Kami",
+            vision: "Menyediakan pengalaman kuliner yang tak terlupakan.",
+            mission: "Menyajikan makanan berkualitas tinggi.",
+            address: "Jl. Contoh Alamat No. 123, Kota Anda, Indonesia",
+            contact: {
+                email: "info@restoran.com",
+                phone: "(021) 123-4567"
+            }
+        };
+
+        // Menampilkan data JSON di halaman
+        document.getElementById('json-data').textContent = JSON.stringify(restaurantInfo, null, 2);
+    </script>
+
+</body>
+</html>
