@@ -6,7 +6,35 @@ router.get('/', function(req, res, next) {
   res.render("home", { title: 'Home', layout:'main' });
 });
 router.get('/pegawai', function(req, res, next) {
-  res.render("pegawai", { title: 'Pegawai', layout:'main' });
+  const pegawai = [
+    {
+        nama: "Chef Juna",
+        role: "Chef",
+       
+    },
+    {
+        nama: "Chef Renata",
+        role: "Chef",
+    },
+    {
+        nama: "Chef Spongebob",
+        role: "Chef",
+    },
+    {
+        nama: "Karina",
+        role: "Kasir",
+    },
+    {
+        nama: "Joko",
+        role: "Pramusaji",
+    },
+    {
+        nama: "Adit",
+        role: "Pramusaji",
+    },
+
+];
+  res.render("pegawai", { title: 'Pegawai',pegawai, layout:'main' });
 });
 router.get('/about', function(req, res, next) {
   res.render("about", { title: 'About', layout:'main' });
