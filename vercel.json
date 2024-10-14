@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "nodejs",
+    "name": "app-restaurant",
     "builds": [
        { "src": "app.js", "use": "@vercel/node" }
     ],
