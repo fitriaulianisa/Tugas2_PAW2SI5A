@@ -5,58 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Menu Happy Restaurant</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <header>
+    <header class="text-center">
         <h1>Menu Happy Restaurant</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="#appetizers">Pembuka</a></li>
-            <li><a href="#main-courses">Hidangan Utama</a></li>
-            <li><a href="#desserts">Pencuci Mulut</a></li>
-            <li><a href="#drinks">Minuman</a></li>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#appetizers">Pembuka</a></li>
+            <li class="nav-item"><a class="nav-link" href="#main-courses">Hidangan Utama</a></li>
+            <li class="nav-item"><a class="nav-link" href="#desserts">Pencuci Mulut</a></li>
+            <li class="nav-item"><a class="nav-link" href="#drinks">Minuman</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="container mt-4">
         <section id="appetizers">
             <h2>Pembuka</h2>
-            <ul>
-                <img src="./img/bruschetta.jpeg" class="rounded float-end" alt="" width="50%" height="50%">
+            <ul class="list-unstyled">
                 <li>Bruschetta - IDR 30.000</li>
-                <img src="./img/srolls.jpeg" class="rounded float-end" alt="" width="50%" height="50%">
+                <img src="./img/bruschetta.jpg" class="img-fluid rounded" alt="Bruschetta, hidangan pembuka khas Italia" width="50%" height="50%">
                 <li>Spring Rolls - IDR 25.000</li>
+                <img src="./img/srolls.jpg" class="img-fluid rounded" alt="Spring Rolls, lumpia goreng sebagai pembuka" width="50%" height="50%">
             </ul>
         </section>
-        <section id="main-courses">
+        <section id="main-courses" class="mt-4">
             <h2>Hidangan Utama</h2>
-            <ul>
-                <img src="./img/rendang.jpg" class="rounded float-end" alt="" width="50%" height="50%">
+            <ul class="list-unstyled">
                 <li>Rendang Daging - IDR 80.000</li>
-                <img src="./img/taliwanh.jpg" class="rounded float-end" alt="" width="50%" height="50%">
+                <img src="./img/rendang.jpg" class="img-fluid rounded" alt="Rendang Daging, masakan daging tradisional Indonesia" width="50%" height="50%">
                 <li>Ayam Bakar Taliwang - IDR 70.000</li>
+                <img src="./img/taliwanh.jpg" class="img-fluid rounded" alt="Ayam Bakar Taliwang khas Lombok" width="50%" height="50%">
             </ul>
         </section>
-        <section id="desserts">
+        <section id="desserts" class="mt-4">
             <h2>Pencuci Mulut</h2>
-            <ul>
-                <img src="./img/klepon.jpg" class="rounded float-end" alt="" width="50%" height="50%">
+            <ul class="list-unstyled">
                 <li>Klepon - IDR 20.000</li>
-                <img src="./img/escampur.jpg" class="rounded float-end" alt="" width="50%" height="50%">
+                <img src="./img/klepon.jpeg" class="img-fluid rounded" alt="Klepon, kue tradisional dengan isi gula merah" width="50%" height="50%">
                 <li>Es Campur - IDR 15.000</li>
+                <img src="./img/escampur.jpg" class="img-fluid rounded" alt="Es Campur, minuman segar khas Indonesia dengan berbagai topping" width="50%" height="50%">
             </ul>
         </section>
-        <section id="drinks">
+        <section id="drinks" class="mt-4">
             <h2>Minuman</h2>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Jus Jeruk - IDR 15.000</li>
+                <img src="./img/jus jeruk.jpg" class="img-fluid rounded" alt="Jus Jeruk dengan buah pilihan yang pastinya segar width="50%" height="50%">
                 <li>Teh Tarik - IDR 10.000</li>
+                <img src="./img/tehtarik.jpeg" class="img-fluid rounded" alt="Teh Tarik, minuman segar khas Indonesia" width="50%" height="50%">
             </ul>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Restoran Kuliner. Semua hak dilindungi.</p>
+    <footer class="text-center mt-4">
+        <p>© 2024 Happy Restaurant. Semua hak dilindungi.</p>
     </footer>
 </body>
 </html>
