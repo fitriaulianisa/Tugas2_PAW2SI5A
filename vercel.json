@@ -1,19 +1,11 @@
 {
-
    "version": 2,
-
    "name": "app-restaurant",
-
    "builds": [
-
       { "src": "app.js", "use": "@vercel/node" }
-
    ],
-
    "routes": [
-
       { "src": "/(.*)", "dest": "/app.js" }
 
    ]
-
 }
