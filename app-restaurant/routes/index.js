@@ -29,4 +29,18 @@ router.get('/menu', function(req, res, next) {
   res.render("menu", { title: 'Menu', layout:'main' });
 });
 
+router.get('/location', function(req, res, next) {
+  res.render("location", { title: 'Location', layout:'main' });
+});
+
+app.get('/listBooking',function(req, res, next) {
+  const listBooking = [
+      { id: 1, customerName: 'John Doe', date: '2024-10-15', time: '19:00', guests: 2, status: 'Confirmed' },
+      { id: 2, customerName: 'Jane Smith', date: '2024-10-16', time: '18:30', guests: 4, status: 'Pending' },
+      { id: 3, customerName: 'Alice Johnson', date: '2024-10-17', time: '20:00', guests: 3, status: 'Cancelled' }
+  ];
+
+  res.json(listBooking);
+});
+
 module.exports = router;
